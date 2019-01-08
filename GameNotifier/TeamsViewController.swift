@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TeamsViewController.swift
 //  GameNotifier
 //
 //  Created by 이수한 on 07/01/2019.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TeamsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
 
 }
-
