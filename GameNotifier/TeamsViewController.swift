@@ -9,6 +9,8 @@
 import UIKit
 
 class TeamsViewController: UITableViewController {
+    
+    let teams: Array<String> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
