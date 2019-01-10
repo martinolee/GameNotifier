@@ -10,7 +10,7 @@ import UIKit
 
 class LeagueViewController: UITableViewController {
     
-    let league = ["England", "Spain", "Germany", "Italy", "France"]
+    let leagues = ["England", "Spain", "Germany", "Italy", "France"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +18,12 @@ class LeagueViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return league.count
+        return leagues.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "leagueCell")
-        cell.textLabel?.text = league[indexPath.row]
+        cell.textLabel?.text = leagues[indexPath.row]
 
         return cell
     }
