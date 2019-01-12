@@ -10,17 +10,17 @@ import UIKit
 
 class TeamsViewController: UITableViewController {
     
-    let teams: Dictionary<String, String> = [
-        "PL": "Liverpool"               , "PL": "Manchester City",
-        "PL": "Tottenham Hotspur"       , "PL": "Chelsea",
-        "PL": "Arsenal"                 , "PL": "Manchester United",
-        "PL": "Leicester City"          , "PL": "Watford",
-        "PL": "Wolverhampton Wanderers" , "PL": "West Ham United",
-        "PL": "Everton"                 , "PL": "Bournemouth",
-        "PL": "Brighton and Hove Albion", "PL": "Crystal Palace",
-        "PL": "Newcastle United"        , "PL": "Burnley",
-        "PL": "Cardiff City"            , "PL": "Southampton",
-        "PL": "Fulham"                  , "PL": "Huddersfield Town"
+    let englandTeams: Array<String> = [
+        "Liverpool"               , "Manchester City",
+        "Tottenham Hotspur"       , "Chelsea",
+        "Arsenal"                 , "Manchester United",
+        "Leicester City"          , "Watford",
+        "Wolverhampton Wanderers" , "West Ham United",
+        "Everton"                 , "Bournemouth",
+        "Brighton and Hove Albion", "Crystal Palace",
+        "Newcastle United"        , "Burnley",
+        "Cardiff City"            , "Southampton",
+        "Fulham"                  , "Huddersfield Town"
     ]
     
     override func viewDidLoad() {
