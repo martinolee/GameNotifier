@@ -12,7 +12,7 @@
 		728283B021E33C59004B1E3D /* GameNotifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 728283AE21E33C59004B1E3D /* GameNotifier.xcdatamodeld */; };
 		728283B221E33C5A004B1E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728283B121E33C5A004B1E3D /* Assets.xcassets */; };
 		728283B521E33C5A004B1E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728283B321E33C5A004B1E3D /* LaunchScreen.storyboard */; };
-		728283C121E34786004B1E3D /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728283C021E34786004B1E3D /* TeamsViewController.swift */; };
+		728283C121E34786004B1E3D /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728283C021E34786004B1E3D /* TeamViewController.swift */; };
 		728283C321E347B6004B1E3D /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728283C221E347B6004B1E3D /* LeagueViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		728283B121E33C5A004B1E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728283B421E33C5A004B1E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		728283B621E33C5A004B1E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		728283C021E34786004B1E3D /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		728283C021E34786004B1E3D /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		728283C221E347B6004B1E3D /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +60,7 @@
 			children = (
 				728283A721E33C59004B1E3D /* AppDelegate.swift */,
 				728283C221E347B6004B1E3D /* LeagueViewController.swift */,
-				728283C021E34786004B1E3D /* TeamsViewController.swift */,
+				728283C021E34786004B1E3D /* TeamViewController.swift */,
 				728283AB21E33C59004B1E3D /* Main.storyboard */,
 				728283B121E33C5A004B1E3D /* Assets.xcassets */,
 				728283B321E33C5A004B1E3D /* LaunchScreen.storyboard */,
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728283A821E33C59004B1E3D /* AppDelegate.swift in Sources */,
-				728283C121E34786004B1E3D /* TeamsViewController.swift in Sources */,
+				728283C121E34786004B1E3D /* TeamViewController.swift in Sources */,
 				728283B021E33C59004B1E3D /* GameNotifier.xcdatamodeld in Sources */,
 				728283C321E347B6004B1E3D /* LeagueViewController.swift in Sources */,
 			);

@@ -10,22 +10,44 @@ import UIKit
 
 class LeagueViewController: UITableViewController {
     
-    let leagues = ["England", "Spain", "Germany", "Italy", "France"]
-
+    var leagues = Dictionary<String, Array<String>>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        leagues.updateValue([
+            "Liverpool"               , "Manchester City",
+            "Tottenham Hotspur"       , "Chelsea",
+            "Arsenal"                 , "Manchester United",
+            "Leicester City"          , "Watford",
+            "Wolverhampton Wanderers" , "West Ham United",
+            "Everton"                 , "Bournemouth",
+            "Brighton and Hove Albion", "Crystal Palace",
+            "Newcastle United"        , "Burnley",
+            "Cardiff City"            , "Southampton",
+            "Fulham"                  , "Huddersfield Town"
+            ], forKey: "England")
+        leagues.updateValue([], forKey: "Spain")
+        leagues.updateValue([], forKey: "Germany")
+        leagues.updateValue([], forKey: "Italy")
+        leagues.updateValue([], forKey: "France")
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return leagues.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "leagueCell")
-        cell.textLabel?.text = leagues[indexPath.row]
-
+        cell.textLabel?.text = Array(leagues.keys)[indexPath.row]
+        
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showTeams" {
+            let vc = segue.destination as! TeamViewController
+        }
+    }
+    
 }
