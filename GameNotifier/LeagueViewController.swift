@@ -47,6 +47,7 @@ class LeagueViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showTeams" {
             let vc = segue.destination as! TeamViewController
+            vc.teams = leagues["England"] ?? []
         }
     }
     
