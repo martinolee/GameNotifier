@@ -22,7 +22,7 @@ class TeamViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "leagueCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath)
         cell.textLabel?.text = teams[indexPath.row]
         
         return cell

@@ -38,7 +38,7 @@ class LeagueViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "leagueCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "leagueCell", for: indexPath)
         cell.textLabel?.text = Array(leagues.keys)[indexPath.row]
         
         return cell
