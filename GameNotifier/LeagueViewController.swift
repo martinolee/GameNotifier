@@ -27,10 +27,53 @@ class LeagueViewController: UITableViewController {
             "Cardiff City"            , "Southampton",
             "Fulham"                  , "Huddersfield Town"
             ], forKey: "England")
-        leagues.updateValue([], forKey: "Spain")
-        leagues.updateValue([], forKey: "Germany")
-        leagues.updateValue([], forKey: "Italy")
-        leagues.updateValue([], forKey: "France")
+        leagues.updateValue([
+            "FC Barcelona"    , "Atlético de Madrid",
+            "Sevilla FC"      , "Real Madrid",
+            "D. Alavés"       , "Getafe CF",
+            "Real Betis"      , "Real Sociedad",
+            "Girona FC"       , "RCD Espanyol",
+            "Valencia CF"     , "Levante UD",
+            "R. Valladolid CF", "CD Leganés",
+            "Athletic Club"   , "SD Eibar",
+            "RC Celta"        , "Rayo Vallecano",
+            "Villarreal CF"   , "SD Huesca"
+            ], forKey: "Spain")
+        leagues.updateValue([
+            "Borussia Dortmund"       , "FC Bayern München",
+            "Borussia Mönchengladbach", "RB Leipzig",
+            "VfL Wolfsburg"           , "Eintracht Frankfurt",
+            "TSG 1899 Hoffenheim"     , "Hertha Berlin",
+            "Bayer 04 Leverkusen"     , "SV Werder Bremen",
+            "Sport-Club Freiburg"     , "1. FSV Mainz 05",
+            "FC Schalke 04"           , "Fortuna Düsseldorf",
+            "FC Augsburg"             , "VfB Stuttgart",
+            "Hannover 96"             , "1. FC Nürnberg"
+            ], forKey: "Germany")
+        leagues.updateValue([
+            "Juventus" , "Napoli",
+            "Inter"    , "Lazio",
+            "Milan"    , "Roma",
+            "Sampdoria", "Atalanta",
+            "Torino"   , "Fiorentina",
+            "Sassuolo" , "Parma",
+            "Cagliari" , "Genoa",
+            "Udinese"  , "Spal",
+            "Empoli"   , "Bologna",
+            "Frosinone", "Chievoverona"
+            ], forKey: "Italy")
+        leagues.updateValue([
+            "Paris Sanit-Germain"   , "LOSC",
+            "Olympique Lyonnais"    , "AS Saint-Etienne",
+            "Montpellier Hérault SC", "RC Starsbourg Alsace",
+            "Stade Rennais FC"      , "OGC Nice",
+            "Olympique de Marseille", "Stade de Reims",
+            "Girondins de Bordeaux" , "FC Nates",
+            "Nîmes Olympique"       , "Toulouse FC",
+            "Angers SCO"            , "SM Caen",
+            "Amiens SC"             , "Dijon FCO",
+            "AS Monaco"             , "EA Guingamp"
+            ], forKey: "France")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
