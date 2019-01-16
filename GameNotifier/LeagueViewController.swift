@@ -10,6 +10,8 @@ import UIKit
 
 class LeagueViewController: UITableViewController {
     
+    var selectedLeague: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -27,9 +29,14 @@ class LeagueViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showTeams" {
-            let vc = segue.destination as! TeamViewController
-            vc.teams = leagues[]
+        if let cell = sender as? UITableViewCell {
+            let i = tableView.indexPath(for: cell)!.row
+            selectedLeague = tableView.cellForRow(at: IndexPath(row: i, section: 0))?.textLabel?.text
+            
+            if segue.identifier == "showTeams" {
+                let teamViewController = segue.destination as! TeamViewController
+                teamViewController.teams = leagues[selectedLeague!]!
+            }
         }
     }
     
