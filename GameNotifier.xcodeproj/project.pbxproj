@@ -14,6 +14,7 @@
 		728283B521E33C5A004B1E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728283B321E33C5A004B1E3D /* LaunchScreen.storyboard */; };
 		728283C121E34786004B1E3D /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728283C021E34786004B1E3D /* TeamViewController.swift */; };
 		728283C321E347B6004B1E3D /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728283C221E347B6004B1E3D /* LeagueViewController.swift */; };
+		72A6DC9821EEC5DE00C5E599 /* LeagueAndTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6DC9721EEC5DE00C5E599 /* LeagueAndTeam.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		728283B621E33C5A004B1E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728283C021E34786004B1E3D /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		728283C221E347B6004B1E3D /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
+		72A6DC9721EEC5DE00C5E599 /* LeagueAndTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueAndTeam.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				728283B321E33C5A004B1E3D /* LaunchScreen.storyboard */,
 				728283B621E33C5A004B1E3D /* Info.plist */,
 				728283AE21E33C59004B1E3D /* GameNotifier.xcdatamodeld */,
+				72A6DC9721EEC5DE00C5E599 /* LeagueAndTeam.swift */,
 			);
 			path = GameNotifier;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A6DC9821EEC5DE00C5E599 /* LeagueAndTeam.swift in Sources */,
 				728283A821E33C59004B1E3D /* AppDelegate.swift in Sources */,
 				728283C121E34786004B1E3D /* TeamViewController.swift in Sources */,
 				728283B021E33C59004B1E3D /* GameNotifier.xcdatamodeld in Sources */,
