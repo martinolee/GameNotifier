@@ -15,7 +15,6 @@ class TeamViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Loaded TeamView")
         tableView.reloadData()
     }
 
