@@ -12,8 +12,6 @@ class LeagueViewController: UITableViewController {
     
     var selectedLeague: String?
     
-    var leagueIndex: Int?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -28,10 +26,6 @@ class LeagueViewController: UITableViewController {
         cell.textLabel?.text = Array(leagues.keys)[indexPath.row]
         
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        leagueIndex = indexPath.row
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
