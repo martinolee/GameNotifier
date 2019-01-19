@@ -23,8 +23,8 @@ class TeamViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath)
-        cell.textLabel?.text = teams[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath) as! TeamCell
+        cell.teamLabel.text = teams[indexPath.row]
         
         return cell
     }
