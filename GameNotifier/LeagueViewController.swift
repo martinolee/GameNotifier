@@ -22,8 +22,8 @@ class LeagueViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "leagueCell", for: indexPath)
-        cell.textLabel?.text = Array(leagues.keys)[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "leagueCell", for: indexPath) as! LeagueCell
+        cell.leagueLabel.text = Array(leagues.keys)[indexPath.row]
         
         return cell
     }
@@ -31,7 +31,8 @@ class LeagueViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UITableViewCell {
             let i = tableView.indexPath(for: cell)!.row
-            selectedLeague = tableView.cellForRow(at: IndexPath(row: i, section: 0))?.textLabel?.text
+            let selectedCell = tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! LeagueCell
+            selectedLeague = selectedCell.leagueLabel.text
             
             if segue.identifier == "showTeams" {
                 let teamViewController = segue.destination as! TeamViewController

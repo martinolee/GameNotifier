@@ -18,14 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leagueCell" id="BuN-v9-VWl">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leagueCell" rowHeight="60" id="BuN-v9-VWl" customClass="LeagueCell" customModule="GameNotifier" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BuN-v9-VWl" id="IqO-Mw-kQv">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF9-3x-yvE">
+                                            <rect key="frame" x="16" y="12" width="67" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="IF9-3x-yvE" firstAttribute="leading" secondItem="IqO-Mw-kQv" secondAttribute="leading" constant="16" id="dXX-Fy-M0a"/>
+                                        <constraint firstItem="IF9-3x-yvE" firstAttribute="centerY" secondItem="IqO-Mw-kQv" secondAttribute="centerY" id="yTs-q5-lea"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="leagueLabel" destination="IF9-3x-yvE" id="7Ds-mD-KAp"/>
                                     <segue destination="mJO-we-1zu" kind="show" identifier="showTeams" id="AhJ-S2-hrf"/>
                                 </connections>
                             </tableViewCell>
