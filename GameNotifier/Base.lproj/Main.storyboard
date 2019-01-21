@@ -26,15 +26,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF9-3x-yvE">
-                                            <rect key="frame" x="16" y="12" width="67" height="36"/>
+                                            <rect key="frame" x="16" y="14" width="67" height="32"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="IF9-3x-yvE" firstAttribute="top" secondItem="IqO-Mw-kQv" secondAttribute="topMargin" constant="3" id="aHH-uW-iod"/>
                                         <constraint firstItem="IF9-3x-yvE" firstAttribute="leading" secondItem="IqO-Mw-kQv" secondAttribute="leading" constant="16" id="dXX-Fy-M0a"/>
-                                        <constraint firstItem="IF9-3x-yvE" firstAttribute="centerY" secondItem="IqO-Mw-kQv" secondAttribute="centerY" id="yTs-q5-lea"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IF9-3x-yvE" secondAttribute="bottom" constant="3" id="ihC-Hd-qNh"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -77,8 +78,8 @@
                                                 <constraint firstAttribute="height" constant="40" id="gaJ-nY-q8q"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70E-sd-8Tc">
-                                            <rect key="frame" x="16" y="13.5" width="60.5" height="32.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70E-sd-8Tc">
+                                            <rect key="frame" x="16" y="14" width="287" height="32"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -86,9 +87,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="3zi-EO-fRj" firstAttribute="centerY" secondItem="HgM-Wb-0D5" secondAttribute="centerY" id="3HN-vd-19d"/>
-                                        <constraint firstItem="70E-sd-8Tc" firstAttribute="centerY" secondItem="HgM-Wb-0D5" secondAttribute="centerY" id="3gN-dH-Rru"/>
+                                        <constraint firstItem="3zi-EO-fRj" firstAttribute="leading" secondItem="70E-sd-8Tc" secondAttribute="trailing" constant="16" id="8ch-QI-igH"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="70E-sd-8Tc" secondAttribute="bottom" constant="3" id="AVr-iY-OOp"/>
                                         <constraint firstAttribute="trailing" secondItem="3zi-EO-fRj" secondAttribute="trailing" constant="16" id="cqQ-kG-uo9"/>
                                         <constraint firstItem="70E-sd-8Tc" firstAttribute="leading" secondItem="HgM-Wb-0D5" secondAttribute="leading" constant="16" id="sfy-J7-ZUs"/>
+                                        <constraint firstItem="70E-sd-8Tc" firstAttribute="top" secondItem="HgM-Wb-0D5" secondAttribute="topMargin" constant="3" id="suD-mG-f4k"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -123,7 +126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dv-a7-9gk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="84.107946026986511"/>
+            <point key="canvasLocation" x="1407" y="84"/>
         </scene>
     </scenes>
 </document>
