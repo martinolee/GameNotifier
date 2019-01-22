@@ -71,7 +71,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-EO-fRj">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyStar" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-EO-fRj">
                                             <rect key="frame" x="319" y="10" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="49o-zO-g5E"/>
@@ -129,4 +129,7 @@
             <point key="canvasLocation" x="1407" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emptyStar" width="64" height="64"/>
+    </resources>
 </document>
