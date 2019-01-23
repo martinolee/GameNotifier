@@ -71,31 +71,26 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyStar" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-EO-fRj">
-                                            <rect key="frame" x="319" y="10" width="40" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="40" id="49o-zO-g5E"/>
-                                                <constraint firstAttribute="height" constant="40" id="gaJ-nY-q8q"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70E-sd-8Tc">
-                                            <rect key="frame" x="16" y="14" width="287" height="32"/>
+                                            <rect key="frame" x="16" y="14" width="60.5" height="32"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BR-LO-EHc">
+                                            <rect key="frame" x="313" y="15" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="3zi-EO-fRj" firstAttribute="centerY" secondItem="HgM-Wb-0D5" secondAttribute="centerY" id="3HN-vd-19d"/>
-                                        <constraint firstItem="3zi-EO-fRj" firstAttribute="leading" secondItem="70E-sd-8Tc" secondAttribute="trailing" constant="16" id="8ch-QI-igH"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="70E-sd-8Tc" secondAttribute="bottom" constant="3" id="AVr-iY-OOp"/>
-                                        <constraint firstAttribute="trailing" secondItem="3zi-EO-fRj" secondAttribute="trailing" constant="16" id="cqQ-kG-uo9"/>
                                         <constraint firstItem="70E-sd-8Tc" firstAttribute="leading" secondItem="HgM-Wb-0D5" secondAttribute="leading" constant="16" id="sfy-J7-ZUs"/>
                                         <constraint firstItem="70E-sd-8Tc" firstAttribute="top" secondItem="HgM-Wb-0D5" secondAttribute="topMargin" constant="3" id="suD-mG-f4k"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bookmark" destination="3zi-EO-fRj" id="1cP-FL-vqf"/>
                                     <outlet property="teamLabel" destination="70E-sd-8Tc" id="Usc-C0-b8I"/>
                                 </connections>
                             </tableViewCell>
@@ -129,7 +124,4 @@
             <point key="canvasLocation" x="1407" y="84"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="emptyStar" width="64" height="64"/>
-    </resources>
 </document>
