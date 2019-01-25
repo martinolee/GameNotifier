@@ -72,20 +72,25 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70E-sd-8Tc">
-                                            <rect key="frame" x="16" y="14" width="60.5" height="32"/>
+                                            <rect key="frame" x="16" y="14" width="273" height="32"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BR-LO-EHc">
-                                            <rect key="frame" x="313" y="15" width="46" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                            <state key="normal" title="Button"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BR-LO-EHc">
+                                            <rect key="frame" x="319" y="10" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="G9k-8J-jIm"/>
+                                                <constraint firstAttribute="height" constant="40" id="ksh-Hd-uzh"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="emptyStar"/>
                                         </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="70E-sd-8Tc" secondAttribute="bottom" constant="3" id="AVr-iY-OOp"/>
+                                        <constraint firstItem="1BR-LO-EHc" firstAttribute="leading" secondItem="70E-sd-8Tc" secondAttribute="trailing" constant="30" id="Rx9-NW-DZF"/>
+                                        <constraint firstItem="1BR-LO-EHc" firstAttribute="centerY" secondItem="HgM-Wb-0D5" secondAttribute="centerY" id="nhb-Qx-z9K"/>
+                                        <constraint firstAttribute="trailing" secondItem="1BR-LO-EHc" secondAttribute="trailing" constant="16" id="nwz-Ad-ISj"/>
                                         <constraint firstItem="70E-sd-8Tc" firstAttribute="leading" secondItem="HgM-Wb-0D5" secondAttribute="leading" constant="16" id="sfy-J7-ZUs"/>
                                         <constraint firstItem="70E-sd-8Tc" firstAttribute="top" secondItem="HgM-Wb-0D5" secondAttribute="topMargin" constant="3" id="suD-mG-f4k"/>
                                     </constraints>
@@ -124,4 +129,7 @@
             <point key="canvasLocation" x="1407" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emptyStar" width="64" height="64"/>
+    </resources>
 </document>
