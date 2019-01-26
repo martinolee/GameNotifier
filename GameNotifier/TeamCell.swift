@@ -10,7 +10,6 @@ import UIKit
 
 class TeamCell: UITableViewCell {
     @IBOutlet var teamLabel: UILabel!
-    @IBOutlet var bookmark: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
