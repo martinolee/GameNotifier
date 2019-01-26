@@ -96,6 +96,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="bookmark" destination="1BR-LO-EHc" id="aDt-Hc-cwf"/>
                                     <outlet property="teamLabel" destination="70E-sd-8Tc" id="Usc-C0-b8I"/>
                                 </connections>
                             </tableViewCell>
