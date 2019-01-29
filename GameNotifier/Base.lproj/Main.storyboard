@@ -84,6 +84,9 @@
                                                 <constraint firstAttribute="height" constant="40" id="ksh-Hd-uzh"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="emptyStar"/>
+                                            <connections>
+                                                <action selector="startBookmark:" destination="gG6-y0-2wZ" eventType="touchUpInside" id="AMC-5F-LLV"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -96,7 +99,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bookmark" destination="1BR-LO-EHc" id="aDt-Hc-cwf"/>
+                                    <outlet property="bookmark" destination="1BR-LO-EHc" id="SZ8-cz-12X"/>
                                     <outlet property="teamLabel" destination="70E-sd-8Tc" id="Usc-C0-b8I"/>
                                 </connections>
                             </tableViewCell>

@@ -9,8 +9,11 @@
 import UIKit
 
 class TeamCell: UITableViewCell {
+    
     @IBOutlet var teamLabel: UILabel!
     @IBOutlet var bookmark: UIButton!
+    
+    var isBookmark: Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +25,14 @@ class TeamCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func startBookmark(_ sender: Any) {
+        if isBookmark {
+            bookmark.setImage(UIImage(named: "emptyStar"), for: .normal)
+        } else {
+            bookmark.setImage(UIImage(named: "filledStar"), for: .normal)
+        }
+        print("clicked")
+    }
+    
 }
