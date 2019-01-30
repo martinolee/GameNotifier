@@ -29,8 +29,10 @@ class TeamCell: UITableViewCell {
     @IBAction func startBookmark(_ sender: Any) {
         if isBookmark {
             bookmark.setImage(UIImage(named: "emptyStar"), for: .normal)
+            isBookmark = false
         } else {
             bookmark.setImage(UIImage(named: "filledStar"), for: .normal)
+            isBookmark = true
         }
         print("clicked")
     }
