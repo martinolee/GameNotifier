@@ -34,7 +34,6 @@ class TeamCell: UITableViewCell {
             bookmark.setImage(UIImage(named: "filledStar"), for: .normal)
             isBookmark = true
         }
-        print("clicked")
     }
     
 }
