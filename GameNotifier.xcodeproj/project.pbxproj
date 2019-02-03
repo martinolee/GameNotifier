@@ -18,6 +18,7 @@
 		728283C321E347B6004B1E3D /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728283C221E347B6004B1E3D /* LeagueViewController.swift */; };
 		7299FA4721F4B47B00DCB311 /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299FA4621F4B47B00DCB311 /* LeagueCell.swift */; };
 		72A6DC9821EEC5DE00C5E599 /* LeagueAndTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6DC9721EEC5DE00C5E599 /* LeagueAndTeam.swift */; };
+		72DD576022068E9E00B94A7E /* FixtureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD575F22068E9E00B94A7E /* FixtureCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		728283C221E347B6004B1E3D /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		7299FA4621F4B47B00DCB311 /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 		72A6DC9721EEC5DE00C5E599 /* LeagueAndTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueAndTeam.swift; sourceTree = "<group>"; };
+		72DD575F22068E9E00B94A7E /* FixtureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				728283C021E34786004B1E3D /* TeamViewController.swift */,
 				721F150721F3333600FD3034 /* TeamCell.swift */,
 				723BF35522046211008DA192 /* FixtureViewController.swift */,
+				72DD575F22068E9E00B94A7E /* FixtureCell.swift */,
 				728283AB21E33C59004B1E3D /* Main.storyboard */,
 				728283B121E33C5A004B1E3D /* Assets.xcassets */,
 				728283B321E33C5A004B1E3D /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 				723BF35622046211008DA192 /* FixtureViewController.swift in Sources */,
 				728283B021E33C59004B1E3D /* GameNotifier.xcdatamodeld in Sources */,
 				7299FA4721F4B47B00DCB311 /* LeagueCell.swift in Sources */,
+				72DD576022068E9E00B94A7E /* FixtureCell.swift in Sources */,
 				728283C321E347B6004B1E3D /* LeagueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
